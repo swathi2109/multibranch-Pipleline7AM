@@ -1,4 +1,3 @@
-# multibranch-Pipleline7AM
 pipeline {
     agent any
 
@@ -11,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from GitHub
-                git 'https://github.com/your-username/your-repo.git'
+                git branch: 'main', url: 'https://github.com/swathi2109/multibranch-Pipleline7AM.git'
             }
         }
 
